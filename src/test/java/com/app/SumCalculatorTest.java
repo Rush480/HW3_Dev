@@ -23,6 +23,8 @@ import org.junit.jupiter.api.Test;
 
         Assertions.assertThrows(IllegalArgumentException.class, () -> sumCalculator.sum(0));
 
+        Assertions.assertThrows(IllegalArgumentException.class, () -> sumCalculator.sum(-1));
+
         Assertions.assertThrows(IllegalArgumentException.class, () -> sumCalculator.sum(65535));
     }
 
